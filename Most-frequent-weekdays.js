@@ -26,3 +26,6 @@ Examples (input -> output):
   2185 -> ['Saturday']
   2860 -> ['Thursday', 'Friday']
 */
+
+
+// Solution
