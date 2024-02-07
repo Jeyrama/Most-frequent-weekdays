@@ -29,3 +29,18 @@ Examples (input -> output):
 
 
 // Solution
+
+function mostFrequentDays(year) {
+  let days = [
+    new Date(year, 0, 1).getDay(), 
+    new Date(year, 11, 31).getDay()
+  ];
+  
+  if (days[0] === days[1])
+    days.pop();
+    
+  else if (!days[0] || days[0] > days[1] && days[1])
+    days.reverse();
+
+  return days.map(n => ['Sun', 'Mon', 'Tues', 'Wednes', 'Thurs', 'Fri', 'Satur'][n] + 'day');
+}
