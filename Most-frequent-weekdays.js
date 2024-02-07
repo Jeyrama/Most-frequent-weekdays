@@ -44,3 +44,5 @@ function mostFrequentDays(year) {
 
   return days.map(n => ['Sun', 'Mon', 'Tues', 'Wednes', 'Thurs', 'Fri', 'Satur'][n] + 'day');
 }
+
+// or
